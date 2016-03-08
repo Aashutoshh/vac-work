@@ -1,0 +1,78 @@
+General System:
+
+toll collector ---> control room ---> technician/cash up room/rest room 
+
+
+problems:
+
+etag lane (was a normal lane before):
+bumping height sensor (loops)
+reset lane
+water into sensing beacon
+
+ ---> sensor 1(entry loop/curtain) ---> sensor 2 (exit loop/curtain) ---> sensing beacon (to look for etag)
+no height sensor (ony class 1 vehicles allowed) 
+has axle and wheel detectors. There is a reset option for the etag lane to cancel the previous vehicle transaction (ie. when a car has to reverse for no tag etc.). 
+This is because the loop sensors come before the beacon so a vehicle would have been detected but anot allowed through
+
+
+
+
+other lanes:
+loop detector (staying high)
+
+acronyms:
+avc (automatic vehicle classification system) - placed at exit. to make sure toll collector classifies the corect vehicle 
+tcc - toll collector controller. (lane contoller)
+ups - uniterrupted power supply
+dwd - double wheel detection
+
+
+components:
+entry loop - axle detectors - height sensor - dwd (wheel sensors) - exit loop
+
+toll collector procedure:
+
+1. class vehicle (1-4)
+2. payment method (cash, card, etc, exempt)
+3. print receipt if required
+
+light control:
+
+Once the toll collector receives payment, (cash - take money, press cash button
+					  card	- just swipe card 
+					  etc 	- car just drives (collector only classes vehicle)
+					  exempt - press exempt button) 
+the traffic light automatically turns green. Changes back to red once the vehicle ENTERS the enter loop 
+(this is to tell the motorist behind to stop).
+
+boom gate control: 
+Once the toll collector receives payment, (cash - take money, press cash button
+					  card	- just swipe card 
+					  etc 	- car just drives (collector only classes vehicle)
+					  exempt - press exempt button) 
+the boom automatically goes up. Comes back down when the vehicle exits the exit loop.
+NB: the light goes green and boom goes up simultaneously. But not the same when turning red and going down. The light turns red before the boom comes down.
+
+	
+Cameras:
+1 for each lane that monitors the rear of the vehicle
+1 that monitors the front of every two lanes
+1 north bound camera to monitor all north bound lanes------- to help control room identify which lanes are open and closed
+1 south bound camera to monitor all south bound lanes-------
+
+
+
+Lanes
+1 2 3 4 5 8 9 10 11 12 13 14 15 16 17 18
+6/7 - emergency lane/abnorml vehicles
+1-10 South Bound
+11-18 North Bound
+
+
+
+
+
+
+
+
